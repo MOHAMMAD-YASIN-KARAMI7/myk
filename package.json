@@ -25,14 +25,11 @@
     "framer-motion": "^10.16.19",
     "clsx": "^2.1.1",
     "class-variance-authority": "^0.7.0",
-    "next-i18next": "^15.0.0",
     "@prisma/client": "^5.10.2",
-    "@radix-ui/react-slot": "^2.0.2",
     "@hookform/resolvers": "^3.3.4",
     "react-hook-form": "^7.51.3",
     "zod": "^3.22.4",
-    "lucide-react": "^0.379.0",
-    "next-intl": "^3.7.0"
+    "lucide-react": "^0.379.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.20",
