@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#09090b" />
+  <title>MYK Focus — Pomodoro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="aurora a1"></div><div class="aurora a2"></div>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><div class="logo">MYK</div><div><strong>FOCUS</strong><span>Pomodoro Workspace</span></div></div>
+      <button id="themeBtn" class="icon-btn" aria-label="تغییر حالت">☼</button>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow"><span class="live-dot"></span><span id="statusText">آماده‌ای؟</span></div>
+      <div class="timer-wrap">
+        <svg class="ring" viewBox="0 0 280 280"><circle class="track" cx="140" cy="140" r="126"/><circle id="progress" class="progress" cx="140" cy="140" r="126"/></svg>
+        <div class="timer-center"><div id="modeLabel" class="mode">FOCUS</div><div id="time" class="time">25:00</div><div id="sessionLabel" class="session">جلسه ۱</div></div>
+      </div>
+      <div class="controls">
+        <button id="resetBtn" class="secondary">↻</button>
+        <button id="startBtn" class="primary">شروع تمرکز</button>
+        <button id="skipBtn" class="secondary">»</button>
+      </div>
+      <div class="modes"><button class="mode-btn active" data-min="25" data-mode="focus">تمرکز ۲۵</button><button class="mode-btn" data-min="5" data-mode="short">استراحت ۵</button><button class="mode-btn" data-min="15" data-mode="long">استراحت ۱۵</button></div>
+    </section>
+
+    <section class="grid">
+      <article class="card task-card"><div class="card-title"><span>🎯</span><h2>ماموریت فعلی</h2></div><input id="task" placeholder="امروز روی چی تمرکز می‌کنی؟" maxlength="80"><div class="task-meta"><span>بدون حواس‌پرتی</span><span id="sessionCount">۰ جلسه</span></div></article>
+      <article class="card stats"><div class="card-title"><span>⚡</span><h2>امروز</h2></div><div class="stat-row"><div><b id="focusMinutes">۰</b><small>دقیقه تمرکز</small></div><div><b id="completed">۰</b><small>جلسه کامل</small></div><div><b id="streak">۰</b><small>زنجیره</small></div></div></article>
+    </section>
+    <footer>MYK Focus • ساخته شده برای Deep Work</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
